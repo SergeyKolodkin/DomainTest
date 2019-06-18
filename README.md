@@ -13,8 +13,8 @@ consisting of L integers where each integer represents an index of a host in inp
 be visited by user.
 For example, given:
 
-A[0] = unlock.microvirus.md;
-A[1] = visitwar.com;
+A[0] = unlock.microvirus.md;  
+A[1] = visitwar.com;  
 A[2] = visitwar.de;
 A[3] = fruonline.co.uk;
 A[4] = australia.open.com;
