@@ -27,12 +27,12 @@ B[3] = list.stolen.credit.card.us.
   
 the function should return the array [1, 3, 4, 5], as explained above.
   
-Assume that:
-• N and M are integers within the range [1..20,000];
-• L is integer within the range [0..20,000];
-• each element of array A is a string with length [2.. 256];
-• each element of collection B is a string with length [2..256].
-
+Assume that:  
+• N and M are integers within the range [1..20,000];  
+• L is integer within the range [0..20,000];  
+• each element of array A is a string with length [2.. 256];  
+• each element of collection B is a string with length [2..256].  
+  
 Complexity:  
 • expected worst-case time complexity is O(N);  
 • expected worst-case space complexity is O(M), beyond input storage (not counting the
