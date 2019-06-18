@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -8,25 +8,6 @@ namespace DomainTest
     {
         // counter for 'IsBlocked(...)' function calls
         public static int IsBlocked_counter = 0;
-        // this is recursive function that checks given reversed url-array 'a_url' for containing in hashset of blocked domains  'hst'
-        //public static bool IsBlocked(HashSet<string> a_hst, string[] a_url)
-        //{
-        //    IsBlocked_counter++;
-        //    // if url-array 'a_url' lenght is 0, then there is no more domains in array, so it is non-blocked
-        //    if (a_url.Length == 0) return false;
-
-        //    // if 'a_hst' contains current url (url-array concatenated to string with '.' delimeter) 
-        //    // then this domain blocked and function returns true. This is O(1) complexity operation
-        //    if (a_hst.Contains(string.Join(".", a_url))) return true;
-
-        //    // else we call IsBlocked(...) function again, and passing as second parameter all elements of 'a_url'
-        //    // array but last one. By this way we checking all subdomains of 'a_url' for containing in blocked domains HashSet
-        //    else
-        //    {
-        //        return IsBlocked(a_hst, a_url.Take(a_url.Length - 1).ToArray());
-        //    }
-        //}
-
         // this is recursive function that checks given string url_main and array of it's subdomains
         // for containing in hashset of blocked domains  'hst'
         private static bool IsBlocked(HashSet<string> a_hst, string a_url_main, string[] a_url_child)
@@ -100,11 +81,11 @@ namespace DomainTest
             int[] non_blocked_domains = Solution.solution(A_arr, B_arr);
 
             // output array of non-blocked domains to console
-            Console.Write("Индексы доступных доменов: ");
+            Console.Write("Indexes of non-blocked domains: ");
             for (int i = 0; i < non_blocked_domains.Length; i++)
                 Console.Write(non_blocked_domains[i] + " ");
 
-            Console.WriteLine("\nКоличество вызовов функции IsBlocked(...): {0}",Solution.IsBlocked_counter);
+            Console.WriteLine("\nQuantity of calls function 'IsBlocked(...)': {0}", Solution.IsBlocked_counter);
 
             // wait until the button pressed
             Console.ReadKey();
