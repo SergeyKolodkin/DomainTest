@@ -13,17 +13,17 @@ consisting of L integers where each integer represents an index of a host in inp
 be visited by user.
 For example, given:
 
-A[0] = unlock.microvirus.md
-A[1] = visitwar.com
-A[2] = visitwar.de
-A[3] = fruonline.co.uk
-A[4] = australia.open.com
-A[5] = credit.card.us
+A[0] = unlock.microvirus.md;
+A[1] = visitwar.com;
+A[2] = visitwar.de;
+A[3] = fruonline.co.uk;
+A[4] = australia.open.com;
+A[5] = credit.card.us.
 
-B[0] = microvirus.md
-B[1] = visitwar.de
-B[2] = piratebay.co.uk
-B[3] = list.stolen.credit.card.us
+B[0] = microvirus.md;
+B[1] = visitwar.de;
+B[2] = piratebay.co.uk;
+B[3] = list.stolen.credit.card.us.
 
 the function should return the array [1, 3, 4, 5], as explained above.
 
